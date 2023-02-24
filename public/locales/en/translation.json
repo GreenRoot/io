@@ -1,6 +1,12 @@
 {
   "Тестовый пример": "Test example",
+  "Главная страница": "Main page",
+  "О нас": "about",
   "Перевод": "Translate",
   "Язык": "RU",
+  "Страница не найдена" : "Page not found",
+  "Произошла непредвиденная ошибка" : "An unexpected error has occurred",
+  "Обновить страницу" : "Refresh the page",
+  "Вызвать ошибку" : "throw Error",
   "test" : "тест"
 }
