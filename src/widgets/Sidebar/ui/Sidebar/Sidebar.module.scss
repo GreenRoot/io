@@ -2,6 +2,7 @@
     height: calc(100vh - var(--navbar-heigth));
     width: var(--sidebar-widh);
     background-color: var(--inverted-bg-color);
+    padding: 20px;
     position: relative;
     transition: width 0.3s;
 }
@@ -9,7 +10,7 @@
 .switchers {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
@@ -28,4 +29,9 @@
     position: absolute;
     right: -32px;
     bottom: 32px;
+}
+
+.items {
+    display: grid;
+    gap: 15px;
 }
