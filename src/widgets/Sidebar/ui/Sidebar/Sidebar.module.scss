@@ -2,20 +2,64 @@
     height: calc(100vh - var(--navbar-heigth));
     width: var(--sidebar-widh);
     background-color: var(--inverted-bg-color);
+    padding: 20px;
     position: relative;
     transition: width 0.3s;
-}
-
-.collapsed {
-    width: var(--sidebar-width-collapsed);
 }
 
 .switchers {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: calc(100% - 40px);
     display: grid;
     grid-auto-flow: column;
     gap: 20px;
     justify-content: center;
+}
+
+.collapseBtn {
+    position: absolute;
+    right: -32px;
+    bottom: 32px;
+}
+
+.items {
+    display: grid;
+    gap: 15px;
+}
+
+.item {
+    margin-top: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    gap: 10px;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.icon {
+    fill: var(--inverted-primary-color);
+}
+
+.link {
+    transition: 0.2s;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .switchers {
+        grid-auto-flow: row;
+    }
+
+    .link {
+        opacity: 0;
+        width: 0;
+    }
+
+    .item {
+        gap: 0;
+        justify-content: center;
+    }
 }
