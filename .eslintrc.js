@@ -57,9 +57,10 @@ module.exports = {
     },
     overrides: [
         {
-            files: ['**/src/**/*.test.tsx', '**/src/**/*.test.ts'],
+            files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
             rules: {
                 'i18next/no-literal-string': 'off',
+                'max-len': 'off',
             },
         },
     ],
