@@ -1,0 +1,12 @@
+.Counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    max-width: 250px;
+    margin: 20px;
+}
+
+.value {
+    grid-area: 1 / 1 / 2 / 3;
+}
