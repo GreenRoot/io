@@ -24,15 +24,15 @@ export const Counter = ({ className }: CounterProps) => {
 
     return (
         <div className={classNames(cls.Counter, {}, [className])}>
-            <h1 className={classNames(cls.value, {}, [className])}>
+            <h1 data-testid="value-title" className={classNames(cls.value, {}, [className])}>
                 {t('Значение')}
                 {' '}
                 =
                 {' '}
                 {counterValue}
             </h1>
-            <Button onClick={increment}>{t('Инкремент')}</Button>
-            <Button onClick={decrement}>{t('Декремент')}</Button>
+            <Button data-testid="increment-button" onClick={increment}>{t('Инкремент')}</Button>
+            <Button data-testid="decrement-button" onClick={decrement}>{t('Декремент')}</Button>
         </div>
     );
 };
