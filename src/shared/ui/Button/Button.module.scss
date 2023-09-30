@@ -74,3 +74,10 @@
 .size_xl {
     font-size: var(--font-size-xl);
 }
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    user-select: none;
+}
